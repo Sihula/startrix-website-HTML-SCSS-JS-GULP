@@ -3,11 +3,265 @@
 @import 'reset';
 @import 'global';
 
+// header-start
+.header {
+  z-index: 5;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(186, 186, 186, 0.25);
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  text-align: center;
+  height: 101px;
+  }
+}
+
+.menu {
+  &__list{
+    display: flex;
+
+  }
+  &__item {
+    margin-right: 40px;
+    
+  }
+  
+}
+
+.btn {
+background: linear-gradient(88.48deg, #FF754A 0.79%, #FFB421 100%);
+    color: $white;
+    padding: 10px 35px;
+    border-radius: 4px;
+    
+  a{
+    color: $white;
+  }
+
+}
+.menu__lsit-link--soon{
+  position: relative;
+&::before{
+  content:'';
+  position: absolute;
+  background-image: url('../images/soon.svg');
+  top: -15px;
+  left: 150px;
+  right: 0;
+  width: 50px;
+  height: 20px;
+}
+}
+// header-end
+// BTN
+#menu-btn{
+  cursor: pointer;
+  display: none;
+}
+// BTN end
+
+// section start
+.start {
+    background-image: url(../images/bg-start.png);
+  background-size: cover;
+  background-position: top center;
+  
+    
+  &__inner {
+        display: flex;
+    padding-top: 68px;
+    justify-content: space-between;   
+    margin-bottom: 90px; 
+  }
+  &__info {
+    max-width: 488px;
+  }
+  &__info-title {
+    font-size: 38px;
+    line-height: 120%;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    color: $white;
+    
+  }
+  &__info-text {
+    margin-bottom: 40px;
+    color: $white;
+  }
+ 
+  &__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $white;
+    
+  }
+  &__link-play {
+    margin-bottom: 43px;
+    text-align: left;
+    margin-left: 47px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background-image: url(../images/play-circle.svg);
+      left: -45px;
+      top: -5px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+.start__link-treal{
+padding: 14px 28px;
+border-radius: 4px;
+background: linear-gradient(88.48deg, #FF754A 0.79%, #FFB421 100%);
+}
+.start__link-demo{
+padding: 13px 57px;
+border: 0.7px solid #FFFFFF;
+border-radius: 4px;
+}
 
 
+.start {
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 160px;
+    flex-wrap: wrap;
+  }
+  &__box-item {
+    background-color: #fff;
+    max-width: 387px;
+    box-shadow: 0px 4px 6px rgba(183, 183, 183, 0.25);
+border-radius: 10px;
+  }
+  &__box-images {
+    display: flex;
+    justify-content: end
+  }
+  &__box-item-img {
+    padding: 28px 28px 0 0;
+  }
+  &__box-item-title {
+    color: $blue;
+    font-size: 38px;
+    line-height: 120%;
+    font-weight: 600;
+    padding: 0 0 10px 40px;
+  }
+  &__box-item-text {
+    padding: 0 30px 40px 40px;
+  }
+}
 
+// section end
 
+// servises start
+.servises {
+  
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+  
+  &__info {
+    max-width: 600px;
+  }
+  &__info-text{
+    margin-bottom: 20px;
+  }
+  &__info-title {
+    font-size: 28px;
+line-height: 130%;
+font-weight: 600;
+margin-bottom: 32px;
+padding-left: 43px;
+color: $blue;
+position: relative;
+&::before{
+  content: '';
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: -9px;
+  top: -5px;
+  background-image: url(../images/servises/num-icon.svg);
+}
+  } 
+  
+  &__info-item {
+    margin-bottom: 16px;
+    padding-left: 40px;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 16px;
+      height: 12px;
+      background-size: cover;
+      background-image: url(../images/servises/chek.svg);
 
+    }
+  }
+  &__info-btn {
+        padding: 12px 34px;
+        border: 0.7px solid #212121;
+        border-radius: 4px;
+        margin-top: 40px;
+  }
+}
+.servises__box{
+position: relative;
+  &::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 379px;
+  height: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/servises/bg-scr.svg);
+  z-index: -1;
+  }
+}
+.servises__buttons{
+  margin-top: 36px;
+  
+}
+.title {
+  &__all {
+    font-size: 32px;
+line-height: 120%;
+text-align: center;
+margin-bottom: 81px;
+  }
+}
+.link-treal {
+  background-color: $blue;
+  border: none;
+  color: $white;
+  margin-right: 36px;
+}
+.servises__box-right{
+flex-direction: row-reverse;
+&::after{
+  background-image: url(../images/servises/bg-scr-red.svg);
+    right: 0;
+    left: 70%;
+    top: -20px;
+  }
+}
+
+// servises end
 
 
 

@@ -7,13 +7,16 @@ body{
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  
 }
-a
+a{
+  color: $black;
+}
 
 .container{
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 1 15px;
+  padding: 0 15px;
 }
 
 
